@@ -10,18 +10,18 @@ package Aula10;
 // e o imprimeFatura() que imprime na tela o valor da fatura.
 
 public class CartaoDeCredito {
-	private double limite;
+	private double limite;         // double inicia em 0
 	private double saldoDaFatura; // criei a minha classe com os atributos
 	private String nomeDoCliente;
 
-	public CartaoDeCredito(double limite, double saldoDaFatura, String nomeDoCliente) {
+	public CartaoDeCredito(double limite, String nomeDoCliente) {
 		this.limite = limite;
-		this.saldoDaFatura = saldoDaFatura; // criei o meu construtor
+		this.saldoDaFatura = 0;                   // criei o meu construtor
 		this.nomeDoCliente = nomeDoCliente;
 	}
-
+	
 	public void aumentaLimite(double valor) {
-		this.saldoDaFatura += valor;
+		this.limite += valor;                    // criei os meus métodos
 	}
 
 	public void diminuiLimite(double valor) {
@@ -29,15 +29,21 @@ public class CartaoDeCredito {
 	}
 
 	public void realizaCompra(double valorDaCompra) {
-		if (this.limite >= valorDaCompra) {
+		if (this.limite <= valorDaCompra) {
+			this.saldoDaFatura += valorDaCompra;
+			this.limite -= valorDaCompra;
 			System.out.println(" Compra não autorizada! ");
 		} else {
 			System.out.println(" Compra realizada com sucesso! ");
 		}
-		
 	}
 
 	public void imprimeFatura() {
+		System.out.printf(" Seu limite atual é: %.2f\n", limite);
+		System.out.printf(" Valor da fatura: %.2f\n ", saldoDaFatura);
+	}
+
+	public void saldoFatura() {
 		System.out.printf(" Valor da fatura: ", this.saldoDaFatura);
 	}
 
@@ -57,9 +63,6 @@ public class CartaoDeCredito {
 		this.saldoDaFatura = saldoFatura;
 	}
 
-	public void saldoFatura(double saldoFatura) {
-		System.out.printf(" Valor da fatura: ", this.saldoDaFatura);
-	}
 
 	public double getLimite() {
 		return limite;

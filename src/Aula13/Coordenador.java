@@ -20,13 +20,22 @@ package Aula13;
 // Adiciona professor (para os coordenadores): observe que um coordenador só pode coordenar 10 professores.
 
 public class Coordenador extends Funcionario {
+	
+	public Coordenador(
+			private String nome;
+			private String cpf;
+			private double numeroRegistro;
+			private String orgoLotacao;
+			private double salario; ) {
+		super(nome, cpf, numeroRegistro, orgoLotacao, salario);
+		// TODO Auto-generated constructor stub
+	}
+
 	private Professor[] professoresSupervisionados = new Professor[10];
 
 	public Professor[] getProfessoresSupervisionados() {
 		return professoresSupervisionados;
 	}
-	
-	Coordenador coordenador = new Coordenador();
 
 	@Override
 	public void aumentoSalario() {

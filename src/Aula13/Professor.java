@@ -27,6 +27,16 @@ public class Professor extends Funcionario {
 	
 	Professor[] professor = new Professor[10];
 	
+	public Professor(String nome, String cpf, double numeroRegistro, String orgoLotacao, double salario,
+			String nivelGraduacao, String disciplinaMinistrada, int qtdAlunos, int qtdTurmas, Professor[] professor) {
+		super(nome, cpf, numeroRegistro, orgoLotacao, salario);
+		this.nivelGraduacao = nivelGraduacao;
+		this.disciplinaMinistrada = disciplinaMinistrada;
+		this.qtdAlunos = qtdAlunos;
+		this.qtdTurmas = qtdTurmas;
+		
+	}
+
 	public void aumentoSalario() {
 		super.setsalario(super.getsalario() + (salario * 0.10));
 	}

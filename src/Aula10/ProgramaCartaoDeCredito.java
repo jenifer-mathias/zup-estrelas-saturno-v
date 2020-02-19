@@ -1,23 +1,23 @@
 package Aula10;
 
+import java.util.Scanner;
+
 public class ProgramaCartaoDeCredito {
 
 	public static void main(String[] args) {
+		                                         // limite | saldo da fatura
+		CartaoDeCredito cartao = new CartaoDeCredito(4500, " Jenifer Mathias dos Santos ");
 		
-		CartaoDeCredito cartao = new CartaoDeCredito(4000, 0, " Jenifer Mathias ");
+	                                                               // mostrei o nome do cliente, mas eu poderia deixar sem parâmetro e 
+		System.out.println(cartao.getNomeCliente());         // fazer como se fosse um novo cliente, digitando o nome dele
 		
-	//	cartao.CartaoDeCredito();
-		// System.out.println(cartao.getNomeCliente());
-	
-		cartao.realizaCompra(9000);
-		System.out.println(cartao.getSaldoFatura());
+		System.out.println(" ");
 		
-		cartao.diminuiLimite(400);
-		System.out.println(cartao.getLimite());
+		cartao.realizaCompra(300);
 		
-		cartao.aumentaLimite(500);
-		System.out.println(cartao.getLimite());
+		System.out.println(" ");
 		
+		cartao.imprimeFatura();
 		
 	}
 
