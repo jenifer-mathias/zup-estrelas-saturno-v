@@ -6,6 +6,7 @@ package Aula14;
 
 // criei a minha classe abstrata
 public abstract class FiguraGeometrica { // o que tem em comum a todas as figuras geometricas... lados
+	
 	protected double area;
 
 	public abstract double calculoArea();         
