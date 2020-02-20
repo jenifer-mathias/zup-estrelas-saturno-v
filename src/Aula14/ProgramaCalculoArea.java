@@ -8,11 +8,20 @@ import java.util.Scanner;
 
 public class ProgramaCalculoArea {
 	
-	Quadrado quadrado = new Quadrado(5);
+	Scanner teclado = new Scanner(System.in);
 	
-	Scanner teclado = new scanner(System.in);
+	Quadrado quadrado = new Quadrado(5); // chamei o meu construtor
+	
+	 Retangulo retangulo = new Retangulo(5, 7);
+	
+	 Triangulo triangulo = new Triangulo(4, 8);
+	
+	 Circulo circulo = new Circulo(6);
+	
+	}
+	
+	
 	
 	
 	
 
-}

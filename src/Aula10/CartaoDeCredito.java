@@ -30,21 +30,18 @@ public class CartaoDeCredito {
 
 	public void realizaCompra(double valorDaCompra) {
 		if (this.limite <= valorDaCompra) {
-			this.saldoDaFatura += valorDaCompra;
-			this.limite -= valorDaCompra;
 			System.out.println(" Compra não autorizada! ");
 		} else {
 			System.out.println(" Compra realizada com sucesso! ");
+			this.saldoDaFatura += valorDaCompra;
+			this.limite -= valorDaCompra;
 		}
 	}
 
 	public void imprimeFatura() {
-		System.out.printf(" Seu limite atual é: %.2f\n", limite);
-		System.out.printf(" Valor da fatura: %.2f\n ", saldoDaFatura);
-	}
-
-	public void saldoFatura() {
-		System.out.printf(" Valor da fatura: ", this.saldoDaFatura);
+		System.out.printf(" Seu limite atual é: %.2f\n", this.limite);
+		System.out.println(" ");
+		System.out.printf(" Valor da fatura: %.2f\n ", this.saldoDaFatura);
 	}
 
 	public String getNomeCliente() {
