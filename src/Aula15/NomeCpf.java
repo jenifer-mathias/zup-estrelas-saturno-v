@@ -22,7 +22,7 @@ public class NomeCpf {
 
 		Map<String, String> nomeCpf = new HashMap<String, String>();
 
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 1; i <= 2; i++) {
 
 			System.out.println(" Digite o seu nome: ");
 			String nome = teclado.nextLine();
@@ -36,12 +36,13 @@ public class NomeCpf {
 
 		System.out.println(" Digite um cpf a ser removido: ");
 		String cpf = teclado.nextLine();
+		System.out.println(" Usuário removido com sucesso. Segue os usuários restantes: ");
 
 		nomeCpf.remove(cpf);
-           // tipo // criação de var    mostra os nomes q estão dentro do mapa
+
+		// tipo // criação de var mostra os nomes q estão dentro do mapa
 		for (String atualizaCpf : nomeCpf.values()) {
 			System.out.println(atualizaCpf);
 		}
 	}
-
 }
