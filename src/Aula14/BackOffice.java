@@ -2,11 +2,11 @@ package Aula14;
 
 // Exemplo feito em aula (utilização de Classe Abstrata)
 
-public class BackOfficeProf extends FuncionarioProf {
+public class BackOffice extends Funcionario {
 	
 	private String areaAtuacao;
 
-	public BackOfficeProf(String nome, String cpf, double salario, double horasSemanais, String areaAtuacao) {
+	public BackOffice(String nome, String cpf, double salario, double horasSemanais, String areaAtuacao) {
 		super(nome, cpf, salario, horasSemanais);
 		this.areaAtuacao = areaAtuacao;
 	}

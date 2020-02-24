@@ -1,10 +1,10 @@
 package Aula14;
 
-public class TechLeadProf extends ProgramadorProf {
+public class TechLead extends Programador {
 
-	private ProgramadorProf[] programadores = new ProgramadorProf[10];
+	private Programador[] programadores = new Programador[10];
 
-	public TechLeadProf(String nome, String cpf, double salario, double horasSemanais, String linguagem,
+	public TechLead(String nome, String cpf, double salario, double horasSemanais, String linguagem,
 			String nivelSenioridade, String area) {
 		super(nome, cpf, salario, horasSemanais, linguagem, nivelSenioridade, area);
 	}
@@ -16,7 +16,7 @@ public class TechLeadProf extends ProgramadorProf {
 		return novoValor;
 	}
 	
-	public boolean adicionaProgramador(ProgramadorProf programador) {
+	public boolean adicionaProgramador(Programador programador) {
 		
 		boolean foiAdicionado = false;
 		
@@ -55,7 +55,7 @@ public class TechLeadProf extends ProgramadorProf {
 	}
 	
 
-	public ProgramadorProf[] getProgramadores() {
+	public Programador[] getProgramadores() {
 		return programadores;
 	}
 

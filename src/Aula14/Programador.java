@@ -1,12 +1,12 @@
 package Aula14;
 
-public class ProgramadorProf extends FuncionarioProf {
+public class Programador extends Funcionario {
 
 	private String linguagem;
 	private String nivelSenioridade;
 	private String area;
 	
-	public ProgramadorProf(String nome, String cpf, double salario, double horasSemanais, String linguagem,
+	public Programador(String nome, String cpf, double salario, double horasSemanais, String linguagem,
 			String nivelSenioridade, String area) {
 		super(nome, cpf, salario, horasSemanais);
 		this.linguagem = linguagem;

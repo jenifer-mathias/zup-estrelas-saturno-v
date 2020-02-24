@@ -1,6 +1,6 @@
 package Aula14;
 
-public abstract class FuncionarioProf {
+public abstract class Funcionario {
 
 	private String nome;
 	private String cpf;
@@ -16,7 +16,7 @@ public abstract class FuncionarioProf {
 		return this.horasSemanais;
 	}
 	
-	public FuncionarioProf(String nome, String cpf, double salario, double horasSemanais) {
+	public Funcionario(String nome, String cpf, double salario, double horasSemanais) {
 		this.nome = nome;
 		this.cpf = cpf;
 		this.salario = salario;
