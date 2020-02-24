@@ -14,7 +14,17 @@ public class Circulo extends FiguraGeometrica {
 	@Override
 	public double calculoArea() {                       
 		return Math.PI * Math.pow(raio, 2);
-	}         
+	}
+
+	public double getRaio() {
+		return raio;
+	}
+
+	public void setRaio(double raio) {
+		this.raio = raio;
+	}     
+	
+	
 }
 
 // Math.PI método q retorna o pi 

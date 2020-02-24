@@ -1,11 +1,23 @@
 package Aula11;
 
 public class ControleRemoto {
-
-	public static void main(String[] args) {
 		
+		private Double volume;
+		private Double canal;
 		
+		public ControleRemoto( Double volume, Double canal) {
+			this.volume = volume;
+			this.canal = canal;
+		}
+		
+		public static String Nome(String nome) {
+			return nome;
+		}
+		
+	//	public Double Volume(Double volume) {
+			
+		//}
 
 	}
 
-}
+

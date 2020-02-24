@@ -13,7 +13,7 @@ public class ProgramaCartaoDeCredito {
 
 	public static void main(String[] args) {
 		                                           // limite
-		CartaoDeCredito cartao = new CartaoDeCredito(4500, " Jenifer Mathias dos Santos ");    // chamei o construtor, gerei meu objeto
+		CartaoDeCredito cartao = new CartaoDeCredito(4500, " Jenifer Mathias ");    // chamei o construtor, gerei meu objeto
 		
 		System.out.println(cartao.getNomeCliente());          // mostrei o nome do cliente, mas eu poderia deixar sem parâmetro e      
 		                                                      // fazer como se fosse um novo cliente, digitando o nome dele

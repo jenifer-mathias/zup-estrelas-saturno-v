@@ -74,13 +74,13 @@ public class ElevadorProf {
 		return totalAndares;
 	}
 
-	public int getCapacidade() {      // usei o get para mostrar no programa principal 
-		return capacidade;            // pois como estão privados, preciso mostrar no programa principal
+	public int getCapacidade() {                    // usei o get para mostrar no programa principal 
+		return capacidade;                          // pois como estão privados, preciso mostrar no programa principal
 	}
 
 	public void setCapacidade(int capacidade) {
-		this.capacidade = capacidade;        // usei o set porque quero modificar a capacidade do meu elevador
-	}                                        // 
+		this.capacidade = capacidade;              // usei o set porque quero modificar a capacidade do meu elevador
+	}                                        
 
 	public int getQtdPessoas() {
 		return qtdPessoas;

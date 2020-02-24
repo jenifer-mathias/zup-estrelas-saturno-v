@@ -16,5 +16,15 @@ public class Quadrado extends FiguraGeometrica {
 	public double calculoArea() {
 		return lado * lado;	
 	}
+
+	public double getLado() {
+		return lado;
+	}
+
+	public void setLado(double lado) {
+		this.lado = lado;
+	}
+	
+	
 	
 }
