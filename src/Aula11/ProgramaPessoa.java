@@ -12,7 +12,7 @@ e também um método para imprimir todos dados de uma pessoa.
 
 Crie um método para calcular a idade da pessoa. */
 
-public class ProgramaDadosPessoa {
+public class ProgramaPessoa {
 
 	public static void main(String[] args) {
 
@@ -23,7 +23,7 @@ public class ProgramaDadosPessoa {
 		System.out.println(" \n Digite sua altura: " + " \n (Obs: Utilize vírgula para o espaçamento) ");
 		Double altura = teclado.nextDouble();
 
-		DadosPessoa dados = new DadosPessoa(nome, altura);
+		Pessoa dados = new Pessoa(nome, altura);
 
 		dados.calculoIdade();
 

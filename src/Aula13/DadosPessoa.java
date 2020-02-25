@@ -28,6 +28,6 @@ administrador é equivalente ao salário de um empregado usual acrescido das ajuda
 custo).
 Escreva um programa de teste adequado para esta classe. */
 
-public class Pessoa {
+public class DadosPessoa {
 
 }
