@@ -16,17 +16,18 @@ public class ProgramaDadosPessoa {
 
 	public static void main(String[] args) {
 
-		DadosPessoa nome = new DadosPessoa(" Jenifer Mathias ", 1.53);
+		Scanner teclado = new Scanner(System.in);
+		System.out.println(" \n Digite o seu nome: ");
+		String nome = teclado.nextLine();
 
-		System.out.println(" Dados do usuário ");
-		
-		System.out.println(" ");
+		System.out.println(" \n Digite sua altura: " + " \n (Obs: Utilize vírgula para o espaçamento) ");
+		Double altura = teclado.nextDouble();
 
-		System.out.println(" Nome: " + nome.getNome());
+		DadosPessoa dados = new DadosPessoa(nome, altura);
 
-		System.out.println(" Altura: " + nome.getAltura());
+		dados.calculoIdade();
 
-		System.out.println(" Idade: " + DadosPessoa.CalculoIdade());
+		dados.dadosImpressao();
 
 	}
 
