@@ -15,7 +15,7 @@ public class ProgramaCalculoArea {
 		FiguraGeometrica triangulo = new Triangulo(4, 8);
 
 		FiguraGeometrica circulo = new Circulo(6);
- 
+
 		System.out.printf("  A área do quadrado é: %.2f\n ", quadrado.calculoArea());
 		System.out.printf(" A área do retângulo é: %.2f\n ", retangulo.calculoArea());
 		System.out.printf(" A área do triângulo é: %.2f\n ", triangulo.calculoArea());

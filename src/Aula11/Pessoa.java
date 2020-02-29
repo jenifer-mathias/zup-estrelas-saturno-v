@@ -15,13 +15,20 @@ Crie um método para calcular a idade da pessoa. */
 public class Pessoa { // classe com atributos
 
 	private String nome;
-	private Double altura;
 	private int idade;
+	public Double altura;
 
 	public Pessoa(String nome, Double altura) {
 		this.nome = nome;
 		this.altura = altura;
 	}
+	
+	public Pessoa(String nome, int idade, Double altura) {
+		this.nome = nome;
+		this.idade = idade;
+		this.altura = altura;
+	}
+	
 
 	public String Nome(String nome) {
 		this.nome = nome;
@@ -97,6 +104,14 @@ public class Pessoa { // classe com atributos
 		this.nome = nome;
 	}
 
+	public int getIdade() {
+		return idade;
+	}
+	
+	public void setIdade(int idade) {
+		this.idade = idade;
+	}
+	
 	public Double getAltura() {
 		return altura;
 	}
@@ -105,12 +120,5 @@ public class Pessoa { // classe com atributos
 		this.altura = altura;
 	}
 
-	public int getIdade() {
-		return idade;
-	}
-
-	public void setIdade(int idade) {
-		this.idade = idade;
-	}
 
 }

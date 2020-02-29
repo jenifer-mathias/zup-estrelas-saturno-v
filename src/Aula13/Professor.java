@@ -37,6 +37,7 @@ public class Professor extends Funcionario {
 		
 	}
 
+	@Override
 	public void aumentoSalario() {
 		super.setsalario(super.getsalario() + (salario * 0.10));
 	}

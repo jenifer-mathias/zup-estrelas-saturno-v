@@ -1,5 +1,21 @@
 package Aula14;
 
+/* Crie à partir da master uma branch com o seu nome-carnaval (EX: braulio-carnaval). 
+ * 
+ * Na sua nova branch desenvolva um programa principal capaz de interagir com as classes referentes  aos funcionários da nossa empresa 
+ * 
+ * nela crie um menu aonde é possível cadastrar e controlar 
+ 
+ * (aumentar salário,
+ *  mostrar o salário, 
+ *  mostrar os dados(para este caso seria interessante criar um método que printa na tela os dados referentes ao funcionário)) 
+ *  até 10 funcionários. 
+ *  
+ *  Crie também um submenu para trabalhar com os TechLeads (cadastro e remoção de programadores). 
+ *  
+ *  Não se esqueça de commitar no repositório remoto sua atividade.
+ */
+
 public class ProgramaCargos {
 
 	public static void main(String[] args) {
